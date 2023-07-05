@@ -1,0 +1,8 @@
+<form (submit)="submitForm()">
+  <div class="form-group">
+      <label for="amount">Monto:</label>
+      <input type="number" [(ngModel)]="payment_request.amount_cents" name="payment-amount" required class="form-control">
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Crear Pago</button>
+</form>
